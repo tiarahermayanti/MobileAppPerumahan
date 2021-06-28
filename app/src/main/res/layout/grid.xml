@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:background="@drawable/lengkung">
+
+
+
+    <GridLayout
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:rowCount="3"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:layout_weight="8"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+
+        <!--row 1 -->
+        <!--column 1-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardTotal"
+            android:layout_width="0dp"
+            android:layout_height="170dp"
+            android:layout_columnWeight="1"
+            android:layout_rowSpan="2"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="25dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/yellow">
+
+            <RelativeLayout
+
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ic1"
+                    android:src="@drawable/home"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_below="@+id/ic1"
+                    android:text="Total Rumah"
+                    android:textSize="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtTotal"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDrainase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/navy">
+
+            <RelativeLayout
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ic7"
+                    android:src="@drawable/drainase"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_toRightOf="@+id/ic7"
+                    android:text="Total Drainase"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtDrainase"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/ic7"
+                    android:layout_below="@+id/txt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!--column 2-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardJalan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/pink">
+
+            <RelativeLayout
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ic5"
+                    android:src="@drawable/road"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_toRightOf="@+id/ic5"
+                    android:text="Total Jalan"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtJalan"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/ic5"
+                    android:layout_below="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--row 4 -->
+        <!--column 1-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="25dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/lightblue">
+
+            <RelativeLayout
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ic3"
+                    android:src="@drawable/air"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_toRightOf="@+id/ic3"
+                    android:text="Total Air Minum"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAir"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/ic3"
+                    android:layout_below="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!--column 2-->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardLimbah"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            app:cardElevation="8dp"
+            app:cardCornerRadius="8dp"
+            app:cardBackgroundColor="@color/darkgrey">
+
+            <RelativeLayout
+                android:layout_margin="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ic6"
+                    android:src="@drawable/delete"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_toRightOf="@+id/ic6"
+                    android:text="Total Air Limbah"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtLimbah"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_toRightOf="@+id/ic6"
+                    android:layout_below="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </GridLayout>
+
+</LinearLayout>
+

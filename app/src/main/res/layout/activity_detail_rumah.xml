@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.DetailRumah">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginTop="10dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_satu"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/greylengkung">
+
+        <TextView
+            android:id="@+id/pmlk"
+            android:text="Pemilik"
+            android:textColor="@color/grey"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtNama"
+            android:layout_below="@+id/pmlk"
+            android:text="Tiara Hermayanti"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txtNama"
+            android:layout_width="1dp"
+            android:background="@color/grey"
+            android:layout_height="30dp">
+        </View>
+
+        <Button
+            android:id="@+id/btnHapus"
+            android:text="Delete"
+            android:textSize="8sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btndelete"
+            android:textColor="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginRight="15dp"/>
+
+
+    </RelativeLayout>
+
+    <!--Identitas Penghuni Rumah-->
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/greylengkung"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/blue"
+            android:text="Foto Rumah"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <ImageView
+            android:id="@+id/imgRumah"
+            android:src="@drawable/pemda"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="400dp"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:background="@color/red"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Identitas Penghuni Rumah"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Nomor Kartu Keluarga"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKk"
+            android:text="1234567"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+            <TextView
+                android:text="Nama Pemilik"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtNamaPemilik"
+                android:text="Tiara Hermayanti"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Suku"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtSuku"
+            android:text="Tanjung"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Pekerjaan Utama"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtPekerjaan"
+            android:text="Mahasiswa"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Besar Penghasilan Perbulan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtPenghasilan"
+            android:text="4.2jt"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Alamat"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAlamat"
+            android:text="Jl Veteran No. 55 Padang"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Kecamatan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKecamatan"
+            android:text="Padang Barat"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Kelurahan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKelurahan"
+            android:text="Purus"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Status Kepemilikan Tanah"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtStatTanah"
+            android:text="Milik Sendiri"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Status Kepemilikan Rumah"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtStatRumah"
+            android:text="Milik Sendiri"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Pernah Mendapatkan Bantuan Perbaikan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtPerbaikan"
+            android:text="Pernah"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tulisTahunB"
+            android:text="Tahun Bantuan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTahunB"
+            android:text="-"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tulisNamaB"
+            android:text="Nama Bantuan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtNamaB"
+            android:text="-"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tulisProgramB"
+            android:text="Nama Program Bantuan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtNamaPB"
+            android:text="-"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tulisNominalB"
+            android:text="Nominal Bantuan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtNominalB"
+            android:text="-"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Jenis Kawasan Lokasi Rumah "
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtJenisK"
+            android:text="Diperuntukan Untuk Pemukiman"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+    </LinearLayout>
+
+    <!--Aspek Kesehatan-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/lightgrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:background="@color/lightblue"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Aspek Kesehatan"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Kamar Mandi"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKamarM"
+            android:text="Sendiri"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Kondisi Kamar Mandi"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKondisiKM"
+            android:text="Baik"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Jamban"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtJamban"
+            android:text="Ada, Mencukupi"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Sistem Pembuangan Air Kotor"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtSistemP"
+            android:text="Ada, Septic Tank"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Kondisi Pembuangan Air Kotor"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/KondisiP"
+            android:text="Baik"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Sumber Air Minum"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAir"
+            android:text="Air Kemasan/ Isi Ulang"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Sumber Listrik"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtListrik"
+            android:text="PLN Tanpa Meteran"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+    </LinearLayout>
+
+    <!--Aspek Persyaratan Luas dan Kebutuhan Ruang-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/lightgrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:background="@color/pink"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Aspek Persyaratan Luas dan Kebutuhan Ruang"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Luas Rumah (m2)"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLuas"
+            android:text="500"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Jumlah Penghuni"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtPenghuni"
+            android:text="10"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+    </LinearLayout>
+
+    <!--Aspek Komponen Bahan Bangunan-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/lightgrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:background="@color/green"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Aspek Komponen Bahan Bangunan"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Kondisi Penutup Atap"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAtap"
+            android:text="Baik"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Kondisi Dinding"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtDinding"
+            android:text="Baik"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Kondisi Lantai"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLantai"
+            android:text="Baik"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+    </LinearLayout>
+
+    <!--Dokumentasi-->
+    <RelativeLayout
+        android:background="@color/lightgrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/txtDokumen"
+            android:layout_marginTop="20dp"
+            android:background="@color/yellow"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Dokumentasi"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <ImageView
+            android:id="@+id/imgDok1"
+            android:layout_below="@+id/txtDokumen"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/lightgrey"
+            android:src="@drawable/pemda"
+            android:background="@drawable/lengkung"
+            android:layout_width="170dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/imgDok2"
+            android:layout_below="@+id/txtDokumen"
+            android:layout_toRightOf="@id/imgDok1"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/lightgrey"
+            android:src="@drawable/pemda"
+            android:background="@drawable/lengkung"
+            android:layout_width="170dp"
+            android:layout_height="100dp" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/footer">
+
+    </include>
+
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.InsertRumah">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_satu"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:theme="@style/AppTheme.AppBarOverlay"/>
+
+        <LinearLayout
+            style="@style/layoutLengkung"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:text="Koordinat Lokasi"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <Button
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:id="@+id/btnLokasi"
+                    android:textSize="10sp"
+                    android:text="Lokasi"
+                    android:textColor="@color/white"
+                    android:background="@drawable/btnlokasi"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp" />
+            </RelativeLayout>
+
+            <View
+                style="@style/view">
+            </View>
+
+            <TextView
+                android:text="Latitude"
+                style="@style/fontBlack"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtLat"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:text="Longitude"
+                style="@style/fontBlack"/>
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtLong"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="Identitas Penghuni Rumah"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                style="@style/view">
+            </View>
+
+            <TextView
+                android:text="Nomor KK"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtKK"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:text="Nama Lengkap"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtNama"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:text="Suku"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtSuku"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:text="Pekerjaan Utama"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinPekerjaan"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Besar Penghasilan Per Bulan"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinPenghasilan"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Alamat"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtAlamat"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:text="Kecamatan"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinKecamatan"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Kelurahan/ Nagari"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinKelurahan"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Status Kepemilikan Tanah"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinStatTanah"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Status Kepemilikan Rumah"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinStatRumah"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Pernah Mendapatkan Bantuan Perbaikan Rumah"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinBantuan"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:id="@+id/txtTahunB"
+                android:text="Tahun Bantuan"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtTahunB"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:id="@+id/txtNamaB"
+                android:text="Nama Bantuan"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtNamaB"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:id="@id/txtNamaPB"
+                android:text="Nama Program Bantuan"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtNamaPB"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:id="@+id/txtNominalB"
+                android:text="Nominal Bantuan"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtNominalB"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:text="Jenis Kawasan Lokasi Rumah Yang Ditempati"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinJenisKaw"
+                style="@style/edttxt"></Spinner>
+
+            <!--Aspek Kesehatan-->
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="Aspek Kesehatan"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                style="@style/view">
+            </View>
+
+            <TextView
+                android:text="Kamar Mandi"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinKamarM"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Kondisi Kamar Mandi"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinKondKamarM"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Jamban"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinJamban"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Kondisi Jamban"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinKondJamban"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Sistem Pembuangan Air Kotor"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinAirK"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Kondisi Sistem Pembuangan Air Kotor"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinKondAirK"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Sumber Air Minum"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinAirM"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Sumber Listrik"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinListrik"
+                style="@style/edttxt"></Spinner>
+
+
+            <!--Aspek Persyaratan Luas dan Kebutuhan Ruang-->
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="Aspek Persyaratan Luas dan Kebutuhan Ruang"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                style="@style/view">
+            </View>
+
+            <TextView
+                android:text="Luas Rumah (m2)"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtLuas"
+                style="@style/edttxt"/>
+
+            <TextView
+                android:text="Jumlah Penghuni"
+                style="@style/fontBlack"/>
+
+            <EditText
+                android:id="@+id/edtJumlahP"
+                style="@style/edttxt"/>
+
+
+            <!--Aspek Komponen Bahan Bangunan-->
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:text="Aspek Komponen Bahan Bangunan"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                style="@style/view">
+            </View>
+
+            <TextView
+                android:text="Kondisi Penutup Atap"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinAtap"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Kondisi Dinding"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinDinding"
+                style="@style/edttxt"></Spinner>
+
+            <TextView
+                android:text="Kondisi Lantai"
+                style="@style/fontBlack"/>
+
+            <Spinner
+                android:id="@+id/spinLantai"
+                style="@style/edttxt"></Spinner>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnPilihImgA"
+                    android:text="Pilih Foto"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imgA"
+                    android:src="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="80px"
+                    android:layout_height="80px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btnPilihImgB"
+                    android:text="Pilih Foto"
+                    android:textSize="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/imgB"
+                    android:src="@color/black"
+                    android:layout_marginLeft="30dp"
+                    android:layout_gravity="center"
+                    android:layout_width="80px"
+                    android:layout_height="80px" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSimpan"
+                android:background="@drawable/btndetail"
+                android:text="Simpan"
+                android:textColor="@color/white"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+
+        </LinearLayout>
+
+        <include
+            layout="@layout/footer"></include>
+
+    </LinearLayout>
+</ScrollView>

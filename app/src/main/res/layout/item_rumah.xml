@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:background="@color/lightgrey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgRumah"
+            android:src="@drawable/pemda"
+            android:backgroundTint="@color/lightgrey"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/txtKumuh"
+            android:text="RLTH"
+            android:textSize="8sp"
+            android:padding="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/kumuh"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLayak"
+            android:text="RLH"
+            android:textSize="8sp"
+            android:padding="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/layak"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_toRightOf="@id/imgRumah"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:text="Pemilik"
+                android:textSize="10sp"
+                android:paddingTop="8dp"
+                android:textColor="@color/grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:textColor="@color/black"
+                android:text="Gilang Pratama"
+                android:textSize="13sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Alamat"
+                android:textSize="10sp"
+                android:textColor="@color/grey"
+                android:paddingTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/txtAlamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/linear1"
+                android:layout_alignBottom="@+id/linear1"
+                android:paddingBottom="10dp"
+                android:text="Jalan Veteran N0 55 Kelurahan purus kecamatan Padang Barat "
+                android:textColor="@color/black"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/linear1"
+            android:layout_width="1dp"
+            android:background="@color/grey"
+            android:layout_height="80dp">
+
+        </View>
+
+        <RelativeLayout
+            android:layout_toRightOf="@id/view"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="10dp">
+
+            <Button
+                android:id="@+id/btnDetail"
+                android:text="Detail"
+                android:textSize="8sp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btndetail"
+                android:textColor="@color/white"
+                android:layout_width="50dp"
+                android:layout_height="20dp" />
+
+            <Button
+            android:id="@+id/btnHapus"
+            android:text="Delete"
+            android:layout_below="@+id/btnDetail"
+            android:textSize="8sp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btndelete"
+            android:textColor="@color/white"
+            android:layout_width="50dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

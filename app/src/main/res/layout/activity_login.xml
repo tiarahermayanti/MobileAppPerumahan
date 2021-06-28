@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".activity.Login">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/pemda"/>
+
+            <TextView
+                android:text="KATAKU"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="Kawasan Tanpa Kumuh"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:id="@+id/login_email"
+                android:layout_height="30dp"
+                android:background="@drawable/edttxt"
+                style="@style/edttxt"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:hint="Email"
+                android:drawablePadding="10dp"
+                android:inputType="textAutoComplete"
+                android:textSize="15dp"
+
+                />
+
+            <EditText
+                android:layout_width="300dp"
+                android:id="@+id/pass"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/edttxt"
+                style="@style/edttxt"
+                android:layout_gravity="center"
+                android:paddingLeft="10dp"
+                android:hint="Password"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:textSize="15dp"
+
+                />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rg_user_adm_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Admin" />
+
+                <RadioButton
+                    android:id="@+id/rg_user_operator_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Operator" />
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/sign_in"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:layout_gravity="center"
+                android:text="Sign In"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/white" />
+
+
+        </LinearLayout>
+
+    <include
+        layout="@layout/footer">
+
+    </include>
+    </LinearLayout>

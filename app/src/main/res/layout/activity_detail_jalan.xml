@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+tools:context=".activity.DetailJalan">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_satu"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:theme="@style/AppTheme.AppBarOverlay"/>
+
+    <LinearLayout
+        android:paddingTop="20dp"
+        style="@style/layoutLengkung"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnHapus"
+                android:text="Delete"
+                android:textSize="10sp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/btndelete"
+                android:textColor="@color/white"
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"/>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Identitas Jalan"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Alamat"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtAlamat"
+            android:text="Jalan By Pass"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Kelurahan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKelurahan"
+            android:text="Purus"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Kecamatan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKecamatan"
+            android:text="Padang Barat"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Jenis Perkerasan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtPerkerasan"
+            android:text="Rigid"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Panjang Jalan Total (m2)"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtPanjang"
+            android:text="5 KM"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Panjang Jalan Kondisi Baik (m2)"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKondBaik"
+            android:text="500 M"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Panjang Jalan Rusak Sebagian (m2)"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKondRS"
+            android:text="500 M"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Panjang Jalan Rusak Berat (m2)"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtKondRB"
+            android:text="4 KM"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <TextView
+            android:text="Daerah Layanan"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtLayanan"
+            android:text="Terlayani"
+            android:layout_marginLeft="30dp"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            style="@style/view">
+        </View>
+
+        <!--Dokumentasi-->
+        <RelativeLayout
+            android:background="@color/lightgrey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/txtDokumen"
+                android:layout_marginTop="20dp"
+                android:background="@color/yellow"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Dokumentasi"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="25dp" />
+
+            <ImageView
+                android:id="@+id/imgDok1"
+                android:layout_below="@+id/txtDokumen"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/lightgrey"
+                android:src="@drawable/pemda"
+                android:background="@drawable/lengkung"
+                android:layout_width="170dp"
+                android:layout_height="100dp" />
+
+            <ImageView
+                android:id="@+id/imgDok2"
+                android:layout_below="@+id/txtDokumen"
+                android:layout_toRightOf="@id/imgDok1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="20dp"
+                android:backgroundTint="@color/lightgrey"
+                android:src="@drawable/pemda"
+                android:background="@drawable/lengkung"
+                android:layout_width="170dp"
+                android:layout_height="100dp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/footer"></include>
+
+    </LinearLayout>
+
+</ScrollView>
